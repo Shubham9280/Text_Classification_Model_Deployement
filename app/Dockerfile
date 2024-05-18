@@ -4,7 +4,7 @@ FROM python:3.8-slim
 # Set the working directory
 WORKDIR /app
 
-COPY ../model/vectorizer.pkl /app/ 
+COPY ../model/model.pkl /app/ 
 
 # Copy the current directory contents into the container at /app
 COPY . /app

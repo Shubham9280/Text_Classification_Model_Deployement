@@ -5,9 +5,9 @@ import numpy as np
 import json
 
 
-with open("./model.pkl","rb") as file:
+with open("model.pkl","rb") as file:
     model=pickle.load(file)
-with open("./label_mapping.json","rb") as j_file :
+with open("label_mapping.json","rb") as j_file :
     model_prediction_map=json.load(j_file)
     
     

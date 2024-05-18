@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Copy the model and config files to the /app directory
 COPY ../model/model.pkl /app/
-COPY ../config/label_mapping.json /app/
+# COPY ../config/label_mapping.json /app/
 
 # Copy the current directory contents into the container at /app
 COPY . /app

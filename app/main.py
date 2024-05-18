@@ -7,11 +7,9 @@ import json
 
 with open("model.pkl","rb") as file:
     model=pickle.load(file)
-with open("label_mapping.json","rb") as j_file :
-    model_prediction_map=json.load(j_file)
-    
-    
-    
+
+model_prediction_map={"0":"Books","1":"Clothing & Accessories","2":"Electronics","3":"Household"}
+      
     
 app=FastAPI()
 

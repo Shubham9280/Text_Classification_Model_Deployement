@@ -20,7 +20,7 @@ class Review(BaseModel):
     
 @app.post("/predict/")
 def predict(review:Review):
-    model_prediction=model.predict([Review.text])
+    model_prediction=model.predict([review.text])
     return model_prediction_map[str(model_prediction[0])]
 
 if __name__ =="__main__":
